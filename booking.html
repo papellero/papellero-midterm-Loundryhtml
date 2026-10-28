@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="booking-section" id="booking">
+    <div class="booking-container">
+      <div class="booking-form-card">
+        <h3 class="form-title">Schedule Your Pick-Up or Delivery,<br>We'll Take Care of the Rest!</h3>
+        
+        <form class="booking-form" onsubmit="event.preventDefault(); alert('Booking request sent successfully!');">
+          <div class="form-row">
+            <input type="text" placeholder="Name" required class="form-input">
+            <input type="email" placeholder="Email" required class="form-input">
+          </div>
+          
+          <div class="form-row">
+            <input type="tel" placeholder="Phone" required class="form-input">
+            <input type="date" required class="form-input">
+          </div>
+
+          <div class="form-row">
+            <select class="form-input full-width" required>
+              <option value="" disabled selected>Time Pickup</option>
+              <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+              <option value="afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+              <option value="evening">Evening (5:00 PM - 8:00 PM)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-cyan btn-block">
+            <i class="fa-solid fa-truck-pickup"></i> Pickup Now
+          </button>
+        </form>
+      </div>
+
+      <div class="booking-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=900" alt="Laundry Pickup Staff" class="booking-person-img">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
